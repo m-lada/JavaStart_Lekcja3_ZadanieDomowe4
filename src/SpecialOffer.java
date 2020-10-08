@@ -11,10 +11,10 @@ public class SpecialOffer {
         this.discount = discount;
         System.out.println("UWAGA!!! Oferta promocyjna: " + product.name + " posiada cenę obniżoną o " + discount*100 +
                 "%! Kupuj teraz z kartą SmartShop!");
-        specialOfferPrice(product);
+        specialOfferPrice();
     }
 
-    double specialOfferPrice (Product product) {
+    double specialOfferPrice () {
         return product.setNewPrice(product.getPrice() * (1 - discount));
     }
 }
