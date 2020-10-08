@@ -25,6 +25,10 @@ public class Product {
         this.price = price;
     }
 
+    public double setNewPrice(double price) {
+        return this.price = price;
+    }
+
     void productInfo() {
         System.out.print("Produkt: " + name + ", " + description);
         if (category != null) {
